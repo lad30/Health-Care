@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './features/error-codes/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,18 @@ const routes: Routes = [
     path: 'admin',
     loadChildren: () => import('./features/layout/layout.module').then(m => m.LayoutModule)
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./features/dashboard/dashboard.module').then(m => m.DashboardModule)
+  },
+  {
+    path: '404',
+    component: PageNotFoundComponent
+  },
+  {
+    path: '**',
+    redirectTo: '404'
+  }
 ];
 
 @NgModule({
