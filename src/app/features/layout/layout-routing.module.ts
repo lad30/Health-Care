@@ -10,6 +10,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'dashboard' },
       { path: 'dashboard', loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule) },
+      { path: 'patient', loadChildren: () => import('../patient/patient.module').then(m => m.PatientModule) },
     ]
   }
 ];

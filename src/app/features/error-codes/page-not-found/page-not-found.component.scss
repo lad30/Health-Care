@@ -1,0 +1,22 @@
+
+.errorMsg {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+  
+    h3 {
+        width: 100%;
+        font-size: 30px;
+        font-weight: 300;
+        color: #FFF;
+  
+        svg {
+            display: block;
+            margin: 0 auto 30px;
+        }
+    }
+  }
+  
