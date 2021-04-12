@@ -1,54 +1,81 @@
-<form class="form-signin">
+<div class="signup">
+    <form class="form-signin">
+        <h4 class="text-center mb-4">Sign Up</h4>
+        <div class="row">
 
-    <div class="form-label-group">
-        <input type="text" id="fname" class="form-control" placeholder="First Name">
-        <label for="fname">First Name</label>
-    </div>
+            <div class="col-6">
+                <div class="form-label-group">
+                    <input type="text" id="fname" class="form-control" placeholder="First Name">
+                    <label for="fname">First Name</label>
+                </div>
+            </div>
 
-    <div class="form-label-group">
-        <input type="text" id="lname" class="form-control" placeholder="Last Name">
-        <label for="lname">Last Name</label>
-    </div>
+            <div class="col-6">
+                <div class="form-label-group">
+                    <input type="text" id="lname" class="form-control" placeholder="Last Name">
+                    <label for="lname">Last Name</label>
+                </div>
+            </div>
 
-    <div class="form-label-group">
-        <input type="text" id="phone" class="form-control" placeholder="Phone">
-        <label for="phone">Phone</label>
-    </div>
+            <div class="col-6">
+                <div class="form-label-group">
+                    <input type="text" id="phone" class="form-control" placeholder="Phone">
+                    <label for="phone">Phone</label>
+                </div>
+            </div>
 
-    <div class="form-label-group">
-        <input type="text" id="age" class="form-control" placeholder="Age">
-        <label for="age">Age</label>
-    </div>
+            <div class="col-6">
+                <div class="form-label-group">
+                    <input type="text" id="age" class="form-control" placeholder="Age">
+                    <label for="age">Age</label>
+                </div>
+            </div>
 
-    <div class="form-label-group">
-        <input type="text" id="uid" class="form-control" placeholder="UID No">
-        <label for="uid">UID No</label>
-    </div>
-    
-    <div class="form-group">
-        <label for="uidCopy">UID Copy</label>
-        <input type="file" id="uidCopy" class="form-control">
-    </div>
+            <div class="col-12">
+                <div class="form-label-group">
+                    <input type="text" id="uid" class="form-control" placeholder="UID No">
+                    <label for="uid">UID No</label>
+                </div>
+            </div>
 
-    <div class="form-label-group">
-        <input type="text" id="practice" class="form-control" placeholder="Practice in Which Hospital/Clinic">
-        <label for="practice">Practice in Which Hospital/Clinic</label>
-    </div>
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="uidCopy">UID Copy</label>
+                    <input type="file" id="uidCopy" class="form-control">
+                </div>
+            </div>
 
-    <div class="form-label-group">
-        <input type="text" id="yg" class="form-control" placeholder="Year of Graducation">
-        <label for="yg">Year of Graducation</label>
-    </div>
+            <div class="col-12">
+                <div class="form-label-group">
+                    <input type="text" id="practice" class="form-control" placeholder="Practice in Which Hospital/Clinic">
+                    <label for="practice">Practice in Which Hospital/Clinic</label>
+                </div>
+            </div>
 
-    <div class="form-label-group">
-        <input type="text" id="speciality" class="form-control" placeholder="Speciality">
-        <label for="speciality">Speciality</label>
-    </div>
+            <div class="col-6">
+                <div class="form-label-group">
+                    <input type="text" id="yg" class="form-control" placeholder="Year of Graducation">
+                    <label for="yg">Year of Graducation</label>
+                </div>
+            </div>
 
-    <div class="form-group">
-        <label for="certificate">Copy of Certificate</label>
-        <input type="file" id="certificate" class="form-control">
-    </div>
+            <div class="col-6">
+                <div class="form-label-group">
+                    <input type="text" id="speciality" class="form-control" placeholder="Speciality">
+                    <label for="speciality">Speciality</label>
+                </div>
+            </div>
 
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
-</form>
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="certificate">Copy of Certificate</label>
+                    <input type="file" id="certificate" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-lg btn-primary btn-block mb-3" type="submit">Register</button>
+
+        <a class="d-block text-center" routerLink="/auth/login">Back to Login</a>
+    </form>
+</div>

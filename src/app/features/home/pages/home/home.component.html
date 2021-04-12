@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<section class="des">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h6>Description: Testing</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="objective">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Objective</h2>
+            </div>
+            <div class="col-3" *ngFor="let objective of objectives" >
+                <div class="card">
+                    <div class="card-body">
+                        <i class="{{objective.icon}}"></i>
+                        <p class="card-text">{{objective.text}}</p>            
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

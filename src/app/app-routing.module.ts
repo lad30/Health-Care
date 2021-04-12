@@ -5,15 +5,15 @@ import { PageNotFoundComponent } from './features/error-codes/page-not-found/pag
 const routes: Routes = [
   {
     path: '',
+    loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)
+  },
+  {
+    path: 'auth',
     loadChildren: () => import('./features/auth/auth.module').then(m => m.AuthModule)
   },
   {
     path: 'admin',
     loadChildren: () => import('./features/layout/layout.module').then(m => m.LayoutModule)
-  },
-  {
-    path: 'home',
-    loadChildren: () => import('./features/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
   {
     path: '404',

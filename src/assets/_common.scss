@@ -16,12 +16,10 @@
     }
 }
 
-.form-signin {
-    width: 100%;
-    max-width: 420px;
-    padding: 15px;
-    margin: 0 auto;
+html, body {
+    height: 100%;
 }
+
 .form-label-group {
     position: relative;
     margin-bottom: 1rem;
@@ -77,4 +75,208 @@
     label {
         font-size: 14px;
     }
+}
+.bg-white {
+    background: #FFF;
+}
+.navbar-brand {
+    width: 200px;
+}
+.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 18px !important;
+    text-transform: uppercase;
+}
+.navbar {
+    .btn {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 16px;
+    }    
+}
+.btn {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 20px;
+}
+.des {
+    background: #f5f5f5;
+    padding: 30px 0;
+}
+.objective {
+    background: #3ca3e8;
+    padding: 40px 0;
+
+    h2 {
+        color: #FFF;
+        margin-bottom: 35px;
+    }
+}
+.card {
+    min-height: 160px;
+    border: none;
+    border-radius: 5px;
+
+    i {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+/*--------- admin -----------*/
+
+.wrapper {
+  overflow: hidden;
+  height: 100%;
+}
+.sidebar-wrapper {
+  width: 70px;
+  min-height: 100vh;
+  margin-left: 0;
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: #007bff;
+}
+#sideMenuBtn { display: none; }
+.main-wrapper {
+  width: calc(100% - 0px);
+  padding-left: 70px;
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+}
+.toggled .main-wrapper {
+  padding-left: 70px;
+  width: calc(100% - 0px);
+  -webkit-transition: all .15s ease;
+  -moz-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+}
+.wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+.sidemenu .navbar-nav {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+.sidemenu .nav-link {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 5px !important;
+  color: #FFF;
+  text-align: center;
+  border-left: solid 3px transparent;
+}
+.sidemenu .nav-link:hover {
+  background: #0069d9;
+  border-left: solid 3px #c0cde0;
+  opacity: 1;
+}
+.sidemenu .active .nav-link {
+  background: #0069d9;
+  border-left: solid 3px #c0cde0;
+  opacity: 1;
+}
+.sidemenu .dropright .dropdown-toggle::after {
+  display: none;
+}
+.sidemenu .dropdown-menu {
+  padding: 0px;
+  border: none;
+  -webkit-box-shadow: 5px 5px 76px -39px rgba(0,0,0,0.44);
+-moz-box-shadow: 5px 5px 76px -39px rgba(0,0,0,0.44);
+box-shadow: 5px 5px 76px -39px rgba(0,0,0,0.44);
+}
+.sidemenu .dropdown-menu .dropdown-item {
+  font-size: 15px;
+  padding: 8px 16px !important;
+  color: #0069d9;
+}
+.sidemenu .dropdown-menu .dropdown-item:hover {
+  background: #0069d9;
+  color: #FFF;
+}
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+.main-wrapper {
+  height: calc(100% - 0px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 0 20px;
+  margin: 15px 0;
+}
+.header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #414143;
+}
+.header .btn-primary {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.content-wrapper {
+  padding: 0 20px;
+  background: #FFF;
+}
+.alert {
+  font-size: 14px;
 }

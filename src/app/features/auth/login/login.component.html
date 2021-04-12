@@ -1,16 +1,21 @@
-<form class="form-signin">
+<div class="login">
+    <form class="form-signin">
+        <div class="form-group text-center mb-4">
+            <a routerLink="/"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a>
+        </div>
+        <h4 class="text-center mb-4">Sign In</h4>
+        <div class="form-label-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autocomplete="new-email">
+            <label for="inputEmail">Email address</label>
+        </div>
 
-    <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autocomplete="new-email">
-        <label for="inputEmail">Email address</label>
-    </div>
+        <div class="form-label-group">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" autocomplete="new-password">
+            <label for="inputPassword">Password</label>
+        </div>
 
-    <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" autocomplete="new-password">
-        <label for="inputPassword">Password</label>
-    </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-
-    <a class="btn btn-lg btn-primary btn-block" href="signup">Register</a>
-</form>
+        <a class="btn btn-lg btn-primary btn-block" routerLink="/auth/signup">Register</a>
+    </form>
+</div>
