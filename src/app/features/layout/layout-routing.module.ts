@@ -11,6 +11,8 @@ const routes: Routes = [
       { path: '', redirectTo: 'dashboard' },
       { path: 'dashboard', loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule) },
       { path: 'patient', loadChildren: () => import('../patient/patient.module').then(m => m.PatientModule) },
+      { path: 'doctor', loadChildren: () => import('../doctor/doctor.module').then(m => m.DoctorModule) },
+      { path: 'tester', loadChildren: () => import('../tester/tester.module').then(m => m.TesterModule) }
     ]
   }
 ];
