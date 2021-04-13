@@ -4,33 +4,21 @@
             <h2>Patient</h2>
         </div>
         <div class="col-sm-6 text-lg-right text-sm-right">
-            <button class="btn btn-primary">Add New</button>
+            <!-- <button class="btn btn-primary">Add New</button> -->
+            <app-table-search [gridApi]="gridApi"></app-table-search>
         </div>
     </div>
 </header><!-- .header end -->
 
 <div class="content-wrapper">
-    <div class="row">
-        <div class="col-4">
-                <form>
-                    <div class="form-label-group">
-                        <input type="text" id="pname" class="form-control" placeholder="Patient Name">
-                        <label for="pname">Patient Name</label>
-                    </div>
-
-                    <div class="form-label-group">
-                        <input type="text" id="uidno" class="form-control" placeholder="UID No">
-                        <label for="uidno">UID No</label>
-                    </div>
-            
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Confirm</button>
-                </form>
-        </div>
-
-        <div class="col-12">
-            <div class="alert alert-warning mt-4" role="alert">
-                This is a warning alert—check it out!
-            </div>
-        </div>
-    </div>
+    <ag-grid-angular
+    style="width: 1075px; height: 280px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [gridOptions]="gridOptions"
+    (gridReady)="gridReady($event)"
+    >
+    </ag-grid-angular>
 </div><!-- .content-wrapper end -->

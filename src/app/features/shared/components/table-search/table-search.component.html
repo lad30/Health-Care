@@ -1,0 +1,8 @@
+<span class="column-search">
+    <button type="button" class="btn btn-secondary d-xl-none" (click)="searchClick()"><i class="fas fa-search"></i></button>
+              
+  <div class="searchBox" [ngClass]="{'hide-search': hideSearchBar, 'show-search': !hideSearchBar}">
+    <i class="far fa-search"></i>
+    <input [disabled]="disabled" [(ngModel)]="searchField"  (paste)="paste($event)" type="search" class="searchField" placeholder="Search" (mouseup)="onClearSearchBox($event)" #searchInput>
+  </div>
+  </span>
