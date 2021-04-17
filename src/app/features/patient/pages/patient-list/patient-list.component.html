@@ -1,0 +1,23 @@
+<header class="header">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Patient List</h2>
+        </div>
+        <div class="col-sm-6 text-lg-right text-sm-right">
+            <button class="btn btn-primary" routerLink="">Add New</button>
+        </div>
+    </div>
+</header><!-- .header end -->
+
+<div class="content-wrapper">
+    <div class="agGridWrapper">
+        <ag-grid-angular
+            style="width: 100%; height: 100%;"
+            class="ag-theme-alpine"
+            [rowData]="rowData"
+            [columnDefs]="columnDefs"
+            (gridReady)="onGridReady($event)"
+        >
+        </ag-grid-angular>
+    </div>
+</div><!-- .content-wrapper end -->
