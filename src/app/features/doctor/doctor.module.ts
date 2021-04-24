@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 import { DoctorRoutingModule } from './doctor-routing.module';
 import { DoctorComponent } from './doctor.component';
 
@@ -9,7 +11,8 @@ import { DoctorComponent } from './doctor.component';
   declarations: [DoctorComponent],
   imports: [
     CommonModule,
-    DoctorRoutingModule
+    DoctorRoutingModule,
+    ModalModule.forRoot()
   ]
 })
 export class DoctorModule { }

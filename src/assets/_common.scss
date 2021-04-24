@@ -276,6 +276,10 @@ box-shadow: 5px 5px 76px -39px rgba(0,0,0,0.44);
 .content-wrapper {
   padding: 0 20px;
   background: #FFF;
+  height: 100%;
+}
+.agGridWrapper {
+  height: calc(100% - 185px);
 }
 .alert {
   font-size: 14px;
