@@ -1,0 +1,29 @@
+<!-- hidden close button -->
+<div class="modal-header">
+    <h4>Add Report</h4>
+    <button type="button" class="close pull-right" aria-label="Close"
+        (click)="closeModal()"><span>&times;</span></button>
+</div>
+<div class="modal-body scroll-modal">
+    <form (ngSubmit)="f.form.valid && submit()" #f="ngForm" novalidate name="form">
+        <div class="form-label-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email" autocomplete="new-email">
+            <label for="inputEmail">Email</label>
+        </div>
+    
+        <div class="form-label-group">
+            <input type="text" id="disease" class="form-control" placeholder="Disease">
+            <label for="disease">Disease</label>
+        </div>
+    
+        <div class="form-label-group">
+            <input type="text" id="comments" class="form-control" placeholder="Comments">
+            <label for="comments">Comments</label>
+        </div>
+        <div class="form-group text-center">
+            <button type="cancel" class="btn btn-secondary d-inline" (click)="closeModal()">Cancel </button>
+            <button type="submit" class="btn btn-custom d-inline">Submit</button>
+        </div>
+    </form>
+    
+</div>

@@ -1,0 +1,20 @@
+<!-- hidden close button -->
+<div class="modal-header">
+    <h4>View Report</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="closeModal()"><span>&times;</span></button>
+</div>
+<div class="modal-body scroll-modal">
+    <p>Patient Report</p>
+    <ul class="reportDetails">
+        <li *ngFor="let info of patientReportObjectKeys">
+            <div class="col-4 p-0">
+                <p><strong>{{info}}:</strong></p>
+            </div>
+            <div class="col-8 p-0">
+                <p class="info">{{patientReport[info]}}</p>
+            </div>
+        </li>
+    </ul>
+    <button type="button" class="btn btn-secondary btn-block" (click)="closeModal()">OK</button>
+</div>
+  
