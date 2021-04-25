@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ColumnApi, GridApi, GridOptions, GridReadyEvent } from 'ag-grid-community';
+import { PatientActionComponent } from './patient-action/patient-action.component';
 
 @Component({
   selector: 'app-patient',
@@ -7,6 +8,7 @@ import { ColumnApi, GridApi, GridOptions, GridReadyEvent } from 'ag-grid-communi
   styleUrls: ['./patient.component.scss']
 })
 export class PatientComponent implements OnInit {
+
   columnDefs;
   rowData;
   defaultColDef = {
@@ -41,6 +43,9 @@ export class PatientComponent implements OnInit {
     context: {
       componentParent: this
     }
+  };
+  frameworkComponents = {
+    patientAction: PatientActionComponent
   };
 
   constructor() {
@@ -79,7 +84,7 @@ export class PatientComponent implements OnInit {
         filterParams: {
           clearButton: true
         },
-        width: 250
+        width: 80
       },
       {
         headerName: 'Date',
@@ -116,6 +121,15 @@ export class PatientComponent implements OnInit {
           clearButton: true
         },
         filter: 'agTextColumnFilter',
+      },
+      {
+        headerName: 'Action',
+        field: 'action',
+        cellRenderer: 'patientAction',
+        cellClass: 'actions-button-cell',
+        sortable: false,
+        filter: false,
+        suppressNavigable: true,
       }
     ]
   }

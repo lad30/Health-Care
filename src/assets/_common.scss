@@ -284,3 +284,33 @@ box-shadow: 5px 5px 76px -39px rgba(0,0,0,0.44);
 .alert {
   font-size: 14px;
 }
+.modal-header {
+  h4 {
+    margin: 0px;
+    font-size: 18px;
+  }
+}
+.searchField {
+  border: solid 1px #e5e5e5;
+  padding: 8px;
+  border-radius: 5px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+.actions-button-cell { 
+  overflow: visible;
+  .ag-group-value {
+      overflow: visible;
+      text-overflow: ellipsis;
+  }
+}
+.btn-link {
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}

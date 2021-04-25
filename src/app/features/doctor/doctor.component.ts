@@ -22,7 +22,7 @@ export class DoctorComponent implements OnInit {
     const config: ModalOptions = {
       backdrop: true,
       ignoreBackdropClick: true,
-      class: 'modal-dialog-centered modal-lg modalCustom'
+      class: 'modal-dialog-centered modal-md modalCustom'
     };
 
     // Open Modal
@@ -34,7 +34,7 @@ export class DoctorComponent implements OnInit {
     const config: ModalOptions = {
       backdrop: true,
       ignoreBackdropClick: true,
-      class: 'modal-dialog-centered modal-lg modalCustom'
+      class: 'modal-dialog-centered modal-md modalCustom'
     };
 
     const initialState = {
